@@ -361,7 +361,6 @@
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.15s ease, opacity 0.15s;
-    position: absolute;
   }
  
   /* Confetti */
@@ -483,36 +482,29 @@
     <div class="paper-lines"></div>
     <button class="close-letter" id="close-letter" title="Close">✕</button>
     <div class="paper-top-deco">🌹 ✦ 🌹</div>
-    <h2>Dear You,</h2>
+    <h2>Dear... someone someone,</h2>
  
     <p>
-      There are some feelings that words can barely hold —
-      and yet here I am, trying to put them all on paper,
-      just for you.
+      AHHH... bhot pehle banayi thi we kabhi send nahi ki aur phir bhul gaya. aaj ye file dikhi toh socha bhej hi deta hu, regret karne se toh acha hi hoga.
     </p>
  
     <p>
       <!-- ✏️ EDIT YOUR TEXT HERE — replace everything between the p tags -->
-      Every time I see you, something in my chest does something
-      it has no business doing. I've been meaning to say this
-      for a while now, but I kept waiting for the perfect moment.
-      I think this is it.
+      aur bhi bhot kuch likha tha but sab hata diya maine toh ab sidha kaam ki baat pe aate hai, theme se pata chal raha hoga... dekh i respect you decision and i know you might not feel the same but... i like you. and i just wanted to let you know because it felt wrong to keep it a secret when it felt so right to say it out loud.
     </p>
  
     <p>
       <!-- ✏️ ADD MORE PARAGRAPHS as you like -->
-      You make ordinary days feel like something worth remembering.
-      And I'd really, really like to keep making memories with you.
+        i know this might come as a surprise, and it's totally okay if you need time to process it. i just couldn't keep it to myself anymore. every time i see you, my heart does this weird little dance, and i catch myself smiling for no reason. it's like you have this magical effect on me that i can't explain.
     </p>
  
     <p>
-      So here it is — simple, honest, and completely terrifying:
-      <strong>I like you.</strong> A lot. More than I probably should admit.
+      yeah that's it... i just wanted to share how i feel. no pressure at all, and if you don't feel the same, that's completely fine. i value our friendship a lot and i hope this doesn't make things awkward between us.
     </p>
  
     <div class="divider">✦ ♡ ✦</div>
  
-    <p class="signature">With all my heart, 💕<br>— Your Secret Admirer</p>
+    <p class="signature">With all my heart, 💕<br></p>
   </div>
 </div>
  
@@ -607,12 +599,12 @@ function moveNo() {
   const maxY = window.innerHeight - 60;
   const rx = Math.random() * maxX;
   const ry = Math.random() * maxY;
+  btnNo.style.position = 'fixed';
   btnNo.style.left = rx + 'px';
   btnNo.style.top  = ry + 'px';
   btnNo.style.right = 'unset';
   btnNo.style.bottom = 'unset';
 }
-btnNo.style.position = 'fixed';
 btnNo.addEventListener('mouseenter', moveNo);
 btnNo.addEventListener('touchstart', moveNo);
  
